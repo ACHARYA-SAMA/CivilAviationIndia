@@ -1,0 +1,405 @@
+@import "tailwindcss";
+
+/*
+  CAVOK: ceiling and visibility OK, perfect flying weather. A sky-tinted haze ground, white panels,
+  navy type; deep sky blue (#0A5BC4) for actions and links; the brand sky blue (#3BA4F2) in large
+  rounded fields (`.field-sky`). Colours are CSS variables, so a `.night` surface (instruments, photo
+  heroes, the landing, the footer) or a `.field-sky` band re-tints everything inside it.
+*/
+@theme {
+  --color-deck-950: #e5f1fc;
+  --color-deck-900: #d5e8fa;
+  --color-deck-800: #c1ddf7;
+  --color-deck-700: #a6cff3;
+  --color-panel: #ffffff;
+  --color-line: rgb(6 24 47 / 0.1);
+  --color-line-strong: rgb(6 24 47 / 0.2);
+
+  /* amber-300 is the accent for text (hover, drop caps): deep sky by day, warm light on night surfaces. */
+  --color-amber-300: #0a5bc4;
+  /* amber-400 is the low sun: small markers only. */
+  --color-amber-400: #ffc845;
+  --color-sky-300: #0a5bc4;
+  --color-sky-400: #3ba4f2;
+  --color-sky-500: #1a84e0;
+
+  --color-ink: #06182f;
+  --color-mute: #34496a;
+  --color-dim: #52678a;
+
+  --color-sign: #06182f;
+  --color-navy: #06182f;
+
+  /* Actions and the selected state; re-tinted inside `.night` and `.field-sky`. */
+  --color-act: #0a5bc4;
+  --color-act-ink: #ffffff;
+  --color-act-hover: #084da7;
+  --color-on: #06182f;
+  --color-on-ink: #ffffff;
+
+  /* Instrument surfaces only (HUD): cockpit display convention, green = active. */
+  --color-hud: #72f5a3;
+}
+
+@theme inline {
+  --font-display: var(--font-mona), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-mona), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-b612), ui-monospace, SFMono-Regular, monospace;
+
+  /* One easing, three durations: used by every transition and animation on the site. */
+  --ease-flight: cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-scroll-cue: scroll-cue 2.4s var(--ease-flight) infinite;
+  --animate-deck-zoom: deck-zoom 22s ease-out forwards;
+  /* Hero entrance is CSS, not JS: it starts at first paint, so it never delays LCP. */
+  --animate-line-rise: line-rise 1.05s var(--ease-flight) both;
+  --animate-fade-rise: fade-rise 0.9s var(--ease-flight) both;
+
+  @keyframes scroll-cue {
+    0% { transform: translateY(-101%); }
+    60%, 100% { transform: translateY(101%); }
+  }
+  @keyframes deck-zoom {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+  }
+  @keyframes line-rise {
+    from { transform: translateY(108%); }
+    to { transform: translateY(0); }
+  }
+  @keyframes fade-rise {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* Night surfaces: instruments, photo heroes, the landing, the footer. Deep navy blue, never black. */
+.night {
+  color-scheme: dark;
+  --color-deck-950: #08214a;
+  --color-deck-900: #0b2a5c;
+  --color-deck-800: #10356f;
+  --color-deck-700: #174284;
+  --color-panel: #0d2f64;
+  --color-line: rgb(190 220 255 / 0.16);
+  --color-line-strong: rgb(190 220 255 / 0.32);
+  --color-amber-300: #ffd27a;
+  --color-sky-300: #9cd5ff;
+  --color-sky-400: #5ebcff;
+  --color-sky-500: #3aa2f5;
+  --color-ink: #f4f9ff;
+  --color-mute: #c2d6f0;
+  --color-dim: #a3bbdc;
+  --color-act: #ffffff;
+  --color-act-ink: #08214a;
+  --color-act-hover: #dcedff;
+  --color-on: #ffffff;
+  --color-on-ink: #08214a;
+  color: var(--color-ink);
+}
+
+/* The brand sky blue as a field: navy type and navy actions on it. */
+.field-sky {
+  --color-panel: #ffffff;
+  --color-line: rgb(6 24 47 / 0.16);
+  --color-line-strong: rgb(6 24 47 / 0.3);
+  --color-amber-300: #06182f;
+  --color-sky-300: #06182f;
+  --color-ink: #06182f;
+  --color-mute: #0a2548;
+  --color-dim: #0a2548;
+  --color-act: #06182f;
+  --color-act-ink: #ffffff;
+  --color-act-hover: #0d2c55;
+  --color-on: #06182f;
+  --color-on-ink: #ffffff;
+  color: var(--color-ink);
+  background: linear-gradient(180deg, #4cb0f6 0%, #3ba4f2 45%, #2a93e8 100%);
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --gutter: clamp(1.25rem, 4.2vw, 4.5rem);
+    /* Rounded fields sit inset from the viewport edge by --frame. */
+    --frame: clamp(0.5rem, 0.9vw, 0.875rem);
+    --field-radius: clamp(1.25rem, 2.4vw, 2rem);
+    --header-h: 4.5rem;
+    --dur-fast: 200ms;
+    --dur-base: 500ms;
+    --dur-slow: 900ms;
+  }
+
+  html {
+    background: var(--color-deck-950);
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: calc(var(--header-h) + 1rem);
+  }
+
+  body {
+    min-height: 100svh;
+    background: var(--color-deck-950);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+
+  ::selection {
+    background: var(--color-sky-400);
+    color: #fff;
+  }
+
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-sky-300);
+    outline-offset: 3px;
+  }
+
+  a, button, [role="button"], summary, label[for] {
+    cursor: pointer;
+  }
+}
+
+/* Smooth scroll (Lenis) */
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+
+/* Custom cursor: only switched on by <CustomCursor/> for fine pointers without reduced motion. */
+html.has-cursor, html.has-cursor * { cursor: none !important; }
+html.has-cursor :where(input, textarea, select, [contenteditable="true"]) { cursor: text !important; }
+
+@layer components {
+  .container-deck {
+    width: 100%;
+    max-width: 1760px;
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+  }
+
+  /* Static film grain: hides upscale softness in archive photography. */
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.07;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+
+  .scrollbar-none { scrollbar-width: none; }
+  .scrollbar-none::-webkit-scrollbar { display: none; }
+
+  /* Split-flap (Solari) tile: see components/ui/SplitFlap.tsx. Flat fills, no per-tile shadows or
+     3D perspective: a board has hundreds of tiles, and these flips must stay on the compositor. */
+  .flap {
+    position: relative;
+    display: inline-block;
+    width: 0.8em;
+    height: 1.26em;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    line-height: 1.26em;
+    text-align: center;
+    border-radius: 0.1em;
+    background: #082a63;
+    contain: layout paint;
+  }
+  .flap::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    top: 50%;
+    height: max(1px, 0.035em);
+    background: rgb(2 14 40 / 0.9);
+    z-index: 3;
+  }
+  .flap-half {
+    position: absolute;
+    inset-inline: 0;
+    height: 50%;
+    overflow: hidden;
+  }
+  .flap-half > span {
+    position: absolute;
+    inset-inline: 0;
+    height: 200%;
+    line-height: 1.26em;
+  }
+  .flap-top {
+    top: 0;
+    border-radius: 0.1em 0.1em 0 0;
+    transform-origin: 50% 100%;
+    background: #12408a;
+  }
+  .flap-top > span { top: 0; }
+  .flap-bottom {
+    bottom: 0;
+    border-radius: 0 0 0.1em 0.1em;
+    transform-origin: 50% 0;
+    background: #0d3678;
+  }
+  .flap-bottom > span { top: -100%; }
+  .flap-fold { z-index: 2; }
+
+  /* Marquee: two copies of the content side by side, the track moves by half its width. */
+  @keyframes marquee { to { transform: translateX(-50%); } }
+
+  /* Rounded fields inset from the viewport: photo heroes, sky bands, the footer. */
+  .field {
+    margin-inline: var(--frame);
+    border-radius: var(--field-radius);
+    overflow: clip;
+  }
+
+  /*
+    The livery stripe: the navy pinstripe that runs along the aircraft above its sky-blue belly,
+    sweeping up towards the tail. Drawn once across the top of a sky field (components/ui/Livery.tsx).
+  */
+  .livery { position: absolute; inset: 0 0 auto 0; height: clamp(5rem, 11vw, 11rem); pointer-events: none; }
+
+  /* The aircraft on the 2 + 2 route ticket, flying the arc from HYD to TUL. */
+  .route-plane { animation: route-fly 7s linear infinite; }
+  @keyframes route-fly {
+    0% { left: 0%; top: 28px; transform: translate(-50%, -50%) rotate(-24deg); opacity: 0; }
+    6% { opacity: 1; }
+    25% { left: 25%; top: 9px; transform: translate(-50%, -50%) rotate(-11deg); }
+    50% { left: 50%; top: 4px; transform: translate(-50%, -50%) rotate(0deg); }
+    75% { left: 75%; top: 9px; transform: translate(-50%, -50%) rotate(11deg); }
+    94% { opacity: 1; }
+    100% { left: 100%; top: 28px; transform: translate(-50%, -50%) rotate(24deg); opacity: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) { .route-plane { animation: none; left: 50%; top: 4px; transform: translate(-50%, -50%); } }
+
+  /* Starfield for night panels: three layers of points, slowly twinkling. */
+  .neo-stars {
+    background-image:
+      radial-gradient(1px 1px at 12% 18%, #fff, transparent), radial-gradient(1px 1px at 32% 72%, #cfe3ff, transparent),
+      radial-gradient(1.5px 1.5px at 54% 36%, #fff, transparent), radial-gradient(1px 1px at 72% 58%, #fff, transparent),
+      radial-gradient(1px 1px at 86% 14%, #cfe3ff, transparent), radial-gradient(1.5px 1.5px at 92% 82%, #fff, transparent),
+      radial-gradient(1px 1px at 6% 88%, #fff, transparent), radial-gradient(1px 1px at 44% 8%, #fff, transparent);
+    background-size: 340px 340px;
+    animation: neo-twinkle 6s ease-in-out infinite alternate;
+  }
+  @keyframes neo-twinkle { from { opacity: 0.45; } to { opacity: 0.85; } }
+
+}
+
+/*
+  Type. One family, Mona Sans (variable weight): tight, mixed-case display for titles, the same face
+  for reading. B612 Mono only on instruments (readouts, flaps, codes).
+*/
+@utility display {
+  font-family: var(--font-display);
+  font-weight: 620;
+  letter-spacing: -0.052em;
+  line-height: 0.92;
+}
+
+/* Section headings. */
+@utility heading {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+/* Buttons, chips and controls. */
+@utility sign-type {
+  font-family: var(--font-sans);
+  font-weight: 560;
+  letter-spacing: -0.012em;
+  line-height: 1;
+}
+
+@utility display-wide {
+  font-family: var(--font-sans);
+  font-weight: 460;
+  letter-spacing: -0.032em;
+  line-height: 1.12;
+}
+
+@utility fs-hero {
+  font-size: clamp(3rem, 8.4vw, 9.5rem);
+}
+
+@utility fs-xxl {
+  font-size: clamp(2.5rem, 6vw, 6rem);
+}
+
+@utility fs-section {
+  font-size: clamp(2.375rem, 5vw, 4.75rem);
+}
+
+@utility fs-xl {
+  font-size: clamp(2rem, 4.4vw, 4rem);
+}
+
+@utility label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Instrument readout: B612 Mono with tabular figures. */
+@utility readout {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+/*
+  Scroll-driven effects run as native CSS (compositor, zero JavaScript, no hydration cost).
+  Browsers without scroll timelines simply show the final state.
+*/
+@keyframes sd-unveil { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0 0 0 0); } }
+@keyframes sd-rise { from { opacity: 0; translate: 0 18px; } to { opacity: 1; translate: 0 0; } }
+@keyframes sd-drift { from { translate: 0 calc(var(--drift, 8%) * -1); } to { translate: 0 var(--drift, 8%); } }
+@keyframes sd-hero-drift { to { translate: 0 7%; } }
+@keyframes sd-fade-out { to { opacity: 0; } }
+@keyframes sd-progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes sd-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes sd-line { from { transform: translateY(104%); } to { transform: none; } }
+.sd-grow { transform-origin: left; }
+.sd-grow.origin-right { transform-origin: right; }
+
+.sd-progress { transform: scaleX(0); transform-origin: left; }
+
+@supports (animation-timeline: view()) {
+  .sd-progress { animation: sd-progress linear both; animation-timeline: scroll(root); }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .sd-unveil { animation: sd-unveil linear both; animation-timeline: view(); animation-range: entry 0% entry 85%; }
+    .sd-rise { animation: sd-rise linear both; animation-timeline: view(); animation-range: entry 0% entry 70%; }
+    .sd-grow { animation: sd-grow linear both; animation-timeline: view(); animation-range: entry 10% cover 40%; }
+    /* A headline line rising out of its own mask as it scrolls in (the parent clips). */
+    .sd-line { animation: sd-line linear both; animation-timeline: view(); animation-range: entry 20% cover 30%; }
+    .sd-drift { animation: sd-drift linear both; animation-timeline: view(); animation-range: cover 0% cover 100%; }
+    .sd-hero-drift { animation: sd-hero-drift linear both; animation-timeline: scroll(root); animation-range: 0 100vh; }
+    .sd-fade-out { animation: sd-fade-out linear both; animation-timeline: scroll(root); animation-range: 0 120px; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

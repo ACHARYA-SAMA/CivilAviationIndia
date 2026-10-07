@@ -1,0 +1,1941 @@
+{
+ "maintenance": [
+  {
+   "no": 1,
+   "code": "AME 101",
+   "training": "Aircraft Maintenance Engineering in Mechanical",
+   "strength": "60",
+   "duration": "3 years",
+   "fee": "7,889 USD"
+  },
+  {
+   "no": 2,
+   "code": "AME 102",
+   "training": "Aircraft Maintenance Engineering in Avionics",
+   "strength": "60",
+   "duration": "3 years",
+   "fee": "15,780 USD"
+  },
+  {
+   "no": 3,
+   "code": "AME 103",
+   "training": "Aircraft Maintenance Engineering in Rotor Blade",
+   "strength": "60",
+   "duration": "3 years",
+   "fee": "6,575 USD"
+  },
+  {
+   "no": 4,
+   "code": "SLE104",
+   "training": "Specialisation and Licensed Examinations DGCA",
+   "strength": "60",
+   "duration": "15 Months",
+   "fee": "10000 INR"
+  },
+  {
+   "no": 5,
+   "code": "SLE105",
+   "training": "Specialisation and Licensed Examinations EASA",
+   "strength": "60",
+   "duration": "15 Months",
+   "fee": "18,700 USD"
+  },
+  {
+   "no": 6,
+   "code": "SLE106",
+   "training": "Specialisation and Licensed Examinations - FAA",
+   "strength": "60",
+   "duration": "15 Months",
+   "fee": "18,700 USD"
+  },
+  {
+   "no": 7,
+   "code": "SLE107",
+   "training": "Specialisation and Licensed Examinations GCAA",
+   "strength": "60",
+   "duration": "15 Months",
+   "fee": "18,700 USD"
+  },
+  {
+   "no": 8,
+   "code": "SLE108",
+   "training": "Specialisation and Licensed Examinations SACA",
+   "strength": "60",
+   "duration": "15 Months",
+   "fee": "18,700 USD"
+  },
+  {
+   "no": 9,
+   "code": "OJT 109",
+   "training": "On Job Training for AME in Mechanical.",
+   "strength": "60",
+   "duration": "2 years",
+   "fee": "2,500 USD"
+  },
+  {
+   "no": 10,
+   "code": "OJT 110",
+   "training": "On Job Training for AME in Avionics",
+   "strength": "60",
+   "duration": "2 years",
+   "fee": "2,500 USD"
+  },
+  {
+   "no": 11,
+   "code": "OJT 111",
+   "training": "On Job Training for AME in Rotor Blade",
+   "strength": "60",
+   "duration": "2 years",
+   "fee": "2,500 USD"
+  }
+ ],
+ "maintenanceTypes": [
+  {
+   "no": 12,
+   "code": "TP206",
+   "strength": "60",
+   "duration": "60Hrs",
+   "fee": "39,429 USD",
+   "aircraft": [
+    "A310 - 200 series",
+    "- 300 series",
+    "A300 - B4 600 series",
+    "- C4 600 series",
+    "- F4 600 series"
+   ]
+  },
+  {
+   "no": 13,
+   "code": "TP207",
+   "strength": "60",
+   "duration": "60Hrs",
+   "fee": "39,429 USD",
+   "aircraft": [
+    "A300 - 600ST (Beluga)"
+   ]
+  },
+  {
+   "no": 14,
+   "code": "TP208",
+   "strength": "60",
+   "duration": "60Hrs",
+   "fee": "39,429 USD",
+   "aircraft": [
+    "A318 - 100 series",
+    "A319 - 100 series",
+    "A320 - 100 series",
+    "- 200 series",
+    "- neo",
+    "A321 - 100 series",
+    "- 200 series",
+    "- neo"
+   ]
+  },
+  {
+   "no": 15,
+   "code": "TP209",
+   "strength": "60",
+   "duration": "60Hrs",
+   "fee": "39,429 USD",
+   "aircraft": [
+    "A330 - 300 series",
+    "- 200 series",
+    "-200F",
+    "- 200 MRTT FAF STC",
+    "- 900 series",
+    "- 800 series"
+   ]
+  },
+  {
+   "no": 16,
+   "code": "TP210",
+   "strength": "60",
+   "duration": "60Hrs",
+   "fee": "39,429 USD",
+   "aircraft": [
+    "A330 - 700L"
+   ]
+  },
+  {
+   "no": 17,
+   "code": "TP211",
+   "strength": "60",
+   "duration": "70Hrs",
+   "fee": "39,429 USD",
+   "aircraft": [
+    "A350 - 900 series",
+    "-1000 series"
+   ]
+  },
+  {
+   "no": 18,
+   "code": "TP212",
+   "strength": "60",
+   "duration": "70Hrs",
+   "fee": "39,429 USD",
+   "aircraft": [
+    "A340 - 200 series",
+    "- 300 series",
+    "- 500 series",
+    "- 600 series"
+   ]
+  },
+  {
+   "no": 19,
+   "code": "TP213",
+   "strength": "60",
+   "duration": "70Hrs",
+   "fee": "39,429 USD",
+   "aircraft": [
+    "A380 - 800 series"
+   ]
+  },
+  {
+   "no": 20,
+   "code": "TP214",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "3,500 USD",
+   "aircraft": [
+    "B727 -100 series",
+    "-200 series"
+   ]
+  },
+  {
+   "no": 21,
+   "code": "TP215",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "3,500 USD",
+   "aircraft": [
+    "B737 -100 series",
+    "-200 series"
+   ]
+  },
+  {
+   "no": 23,
+   "code": "TP216",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "3,500 USD",
+   "aircraft": [
+    "B737 CL",
+    "-300 / -400 / -500 series"
+   ]
+  },
+  {
+   "no": 24,
+   "code": "TP217",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "3,500 USD",
+   "aircraft": [
+    "B737 NG",
+    "-600 / -700 / -800 / -900 / -900 ER series",
+    "B737 MAX",
+    "-8 / -9 series"
+   ]
+  },
+  {
+   "no": 25,
+   "code": "TP218",
+   "strength": "60",
+   "duration": "100Hrs",
+   "fee": "3,500 USD",
+   "aircraft": [
+    "B747 -100 series",
+    "B747 -200 series",
+    "B747 -300 series"
+   ]
+  },
+  {
+   "no": 26,
+   "code": "TP219",
+   "strength": "60",
+   "duration": "100Hrs",
+   "fee": "3,500 USD",
+   "aircraft": [
+    "B747-SP"
+   ]
+  },
+  {
+   "no": 27,
+   "code": "TP220",
+   "strength": "60",
+   "duration": "100Hrs",
+   "fee": "3,500 USD",
+   "aircraft": [
+    "B747 - 400 series",
+    "- 400 F series"
+   ]
+  },
+  {
+   "no": 28,
+   "code": "TP221",
+   "strength": "60",
+   "duration": "100Hrs",
+   "fee": "3,500 USD",
+   "aircraft": [
+    "B747 - 8 series",
+    "- 8F series"
+   ]
+  },
+  {
+   "no": 29,
+   "code": "TP222",
+   "strength": "60",
+   "duration": "100Hrs",
+   "fee": "3,500 USD",
+   "aircraft": [
+    "B757 - 200 series",
+    "- 300 series"
+   ]
+  },
+  {
+   "no": 30,
+   "code": "TP223",
+   "strength": "60",
+   "duration": "100Hrs",
+   "fee": "3,500 USD",
+   "aircraft": [
+    "B767 - 200 series",
+    "- 300 series",
+    "- 300 F series"
+   ]
+  },
+  {
+   "no": 31,
+   "code": "TP224",
+   "strength": "60",
+   "duration": "100Hrs",
+   "fee": "3,500 USD",
+   "aircraft": [
+    "B767 -400 ER"
+   ]
+  },
+  {
+   "no": 32,
+   "code": "TP225",
+   "strength": "60",
+   "duration": "100Hrs",
+   "fee": "3,500 USD",
+   "aircraft": [
+    "B777 - 200 series",
+    "-300 series",
+    "B777F"
+   ]
+  },
+  {
+   "no": 33,
+   "code": "TP226",
+   "strength": "60",
+   "duration": "100Hrs",
+   "fee": "3,500 USD",
+   "aircraft": [
+    "B787 - 8 series",
+    "- 9 series",
+    "-10 series"
+   ]
+  },
+  {
+   "no": 34,
+   "code": "TP227",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "ATR 42 (not PEC equipped)",
+    "- 42-200 / -300 / -320"
+   ]
+  },
+  {
+   "no": 35,
+   "code": "TP228",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "ATR 42 (PEC equipped)",
+    "- 42-400 / -500",
+    "ATR 72 (not PEC equipped)",
+    "- 72-101 / -102 / -201 / -202 / -211 / -212",
+    "ATR 72 (PEC equipped)",
+    "- 72-101 / -102 / -201 / -202 (with mod 4371)",
+    "- 72-211 / -212",
+    "(with mod 3973 or 4371)"
+   ]
+  },
+  {
+   "no": 36,
+   "code": "TP229",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "ATR 42 (glass cockpit or 42-600)",
+    "- 42-500",
+    "(with mod 5948)",
+    "ATR 72 (glass cockpit or 72-600)",
+    "- 72-212A",
+    "(with mod 5948)"
+   ]
+  },
+  {
+   "no": 37,
+   "code": "TP230",
+   "strength": "60",
+   "duration": "30Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Jetstream 41"
+   ]
+  },
+  {
+   "no": 38,
+   "code": "TP231",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Beechcraft Raytheon",
+    "RA-390"
+   ]
+  },
+  {
+   "no": 39,
+   "code": "TP232",
+   "strength": "60",
+   "duration": "30Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Piaggio 166, P166"
+   ]
+  },
+  {
+   "no": 40,
+   "code": "TP233",
+   "strength": "60",
+   "duration": "30Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Piaggio Aero Industries",
+    "P180 Avanti"
+   ]
+  },
+  {
+   "no": 41,
+   "code": "TP234",
+   "strength": "60",
+   "duration": "25Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "P180 Avanti II",
+    "P180 Avanti EVO"
+   ]
+  },
+  {
+   "no": 42,
+   "code": "TP235",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Bombardier Inc. CL 215"
+   ]
+  },
+  {
+   "no": 43,
+   "code": "TP236",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Bombardier Inc.",
+    "Challenger series:",
+    "CL 600",
+    "CL 601-1A",
+    "CL 601-3A"
+   ]
+  },
+  {
+   "no": 44,
+   "code": "TP237",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Bombardier Inc.",
+    "CL-600-2B16",
+    "- Challenger 605",
+    "- Challenger 650"
+   ]
+  },
+  {
+   "no": 45,
+   "code": "TP238",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Bombardier Inc.",
+    "CL600-2C10",
+    "- 700",
+    "- 701",
+    "- 702",
+    "- Challenger 870",
+    "CL600-2D15",
+    "- 705",
+    "CL600-2D24",
+    "- 900",
+    "- Challenger 890"
+   ]
+  },
+  {
+   "no": 46,
+   "code": "TP239",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Bombardier Inc.",
+    "CL600-2E25",
+    "- 1000"
+   ]
+  },
+  {
+   "no": 47,
+   "code": "TP240",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Bombardier Inc. BD700-1A10 (Global Express XRS)",
+    "BD700-1A11 (Global 5000)"
+   ]
+  },
+  {
+   "no": 48,
+   "code": "TP241",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Bombardier Inc. BD-700"
+   ]
+  },
+  {
+   "no": 49,
+   "code": "TP242",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Bombardier Inc.",
+    "BD700-1A10 GVFD",
+    "(Global 6000)",
+    "BD700-1A11 GVFD",
+    "(Global 5000 GVFD)"
+   ]
+  },
+  {
+   "no": 50,
+   "code": "TP243",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Bombardier Inc.",
+    "BD-700-1A10 (Global 6500)",
+    "BD-700-1A11 (Global 5500)"
+   ]
+  },
+  {
+   "no": 51,
+   "code": "TP244",
+   "strength": "60",
+   "duration": "60Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "McDonnell Douglas",
+    "Douglas A-26B"
+   ]
+  },
+  {
+   "no": 52,
+   "code": "TP245",
+   "strength": "60",
+   "duration": "60Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "McDonnell Douglas",
+    "DC-3A-S1C3G",
+    "DC-3C-SC3G"
+   ]
+  },
+  {
+   "no": 53,
+   "code": "TP246",
+   "strength": "60",
+   "duration": "60Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "McDonnell Douglas DC4",
+    "DC6 series DC7C",
+    "DC8 -33",
+    "-50, 60, 70 series DC9",
+    "10-50 series"
+   ]
+  },
+  {
+   "no": 54,
+   "code": "TP247",
+   "strength": "60",
+   "duration": "60Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "McDonnell Douglas / Boeing",
+    "DC9 80 series",
+    "MD 88 series",
+    "MD 90 series",
+    "MD 11",
+    "DC 10 series"
+   ]
+  },
+  {
+   "no": 55,
+   "code": "TP248",
+   "strength": "60",
+   "duration": "34Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Learjet (Bombardier)",
+    "Learjet -20 series",
+    "45 (Learjet 40 series, LR-40)",
+    "45 (Learjet 45 series, LR-45)",
+    "Learjet -55 series",
+    "Model 60 (Learjet 60 series)"
+   ]
+  },
+  {
+   "no": 56,
+   "code": "TP249",
+   "strength": "60",
+   "duration": "34Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Learjet (Bombardier)",
+    "-30 series",
+    "75 (Learjet 70 series, LR-70)",
+    "75 (Learjet 75 series, LR-75)"
+   ]
+  },
+  {
+   "no": 57,
+   "code": "TP250",
+   "strength": "60",
+   "duration": "25Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Cessna",
+    "525 – CJ1",
+    "525A – CJ2",
+    "525 – CJ1+",
+    "525A – CJ2+",
+    "525B – CJ3",
+    "525 – M2",
+    "525C – CJ4"
+   ]
+  },
+  {
+   "no": 58,
+   "code": "TP251",
+   "strength": "60",
+   "duration": "35Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Cessna",
+    "C560XL",
+    "C560XLS",
+    "C560XL/XLS",
+    "C500/550/560",
+    "C 500",
+    "C560XLS+",
+    "C 550",
+    "CS 550CS 550 Bravo",
+    "560 (Citation V 560 (Citation Ultra)"
+   ]
+  },
+  {
+   "no": 59,
+   "code": "TP252",
+   "strength": "60",
+   "duration": "35Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Cessna",
+    "560 Encore",
+    "OSD FC CE-560",
+    "Encore / Encore+",
+    "560 Encore+",
+    "C650 Citation III",
+    "Citation VI",
+    "Citation VII"
+   ]
+  },
+  {
+   "no": 60,
+   "code": "TP253",
+   "strength": "60",
+   "duration": "35Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Cessna",
+    "C680 Sovereign",
+    "C680 Sovereign+",
+    "C680A Latitude"
+   ]
+  },
+  {
+   "no": 61,
+   "code": "TP254",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Dassault",
+    "Falcon 10",
+    "Falcon 10/100",
+    "Falcon 20/200",
+    "Falcon 20 series",
+    "Falcon 100",
+    "Falcon 2000",
+    "Falcon2000/2000EX",
+    "Falcon 2000 EX EASy",
+    "Falcon 2000 DX",
+    "Falcon 2000 LX Falcon 2000 EX"
+   ]
+  },
+  {
+   "no": 62,
+   "code": "TP255",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Dassault",
+    "Falcon 900EX EASyII",
+    "Falcon 900DX EASyII",
+    "Falcon 900LX EASyII",
+    "Falcon900EX EASy Falcon",
+    "900 EX EASy",
+    "Falcon 900 DX",
+    "Falcon 900 LX"
+   ]
+  },
+  {
+   "no": 63,
+   "code": "TP256",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Falcon 2000EX EASy II",
+    "Falcon 2000DX EASy II",
+    "Falcon 2000LX EASy II",
+    "Falcon 2000LXS",
+    "Falcon 2000S"
+   ]
+  },
+  {
+   "no": 64,
+   "code": "TP257",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Dassault",
+    "Falcon 7X",
+    "Falcon 7X",
+    "Falcon 7X EASy II",
+    "Falcon 8X",
+    "Mystere Falcon 50",
+    "Falcon 50EX",
+    "Mystere Falcon 900",
+    "Falcon 900C",
+    "Falcon 900EX",
+    "Falcon50/900"
+   ]
+  },
+  {
+   "no": 65,
+   "code": "TP258",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Embraer",
+    "Bandeirante EMB 110",
+    "EMB 120",
+    "EMB 120 Brasilia",
+    "EMB 135/145",
+    "EMB - 145",
+    "-135, 145 series",
+    "EMB - 145",
+    "-135,145 series",
+    "equipt with Autothrottle"
+   ]
+  },
+  {
+   "no": 66,
+   "code": "TP259",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Embraer",
+    "EMB-500 (Phenom 100)",
+    "EMB 500/505",
+    "EMB-505 (Phenom 300)",
+    "EMB 550",
+    "EMB-550 (Legacy 500)",
+    "EMB-550 (Praetor 600)",
+    "EMB-545 (Legacy 450)",
+    "EMB-545 (Praetor 500)"
+   ]
+  },
+  {
+   "no": 67,
+   "code": "TP260",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Embraer",
+    "ERJ 170-100 / Embraer 170",
+    "ERJ 170-200 / Embraer 175",
+    "ERJ 190-100 / Embraer 190",
+    "ERJ 190-100 ECJ / Lineage 1000",
+    "ERJ 190-200 / Embraer 195",
+    "ERJ 190-300 / Embraer 190 E2",
+    "ERJ 190-400 /Embraer 195 E2"
+   ]
+  },
+  {
+   "no": 68,
+   "code": "TP261",
+   "strength": "60",
+   "duration": "35Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Agusta Bell - SE Piston - Agusta",
+    "Bell 47G-2 Agusta Bell 47G-2A-1",
+    "Agusta Bell 47G-3B-1 Agusta Bell",
+    "47G-4 Agusta Bell 47G-4A Agusta",
+    "Bell 47J",
+    "Agusta Bell 47J-2 Agusta Bell 47J-3 Bell",
+    "Agusta Bell - SE Turbine Agusta",
+    "Bell 206 A Agusta Bell 206 B (D)",
+    "Bell 206"
+   ]
+  },
+  {
+   "no": 69,
+   "code": "TP262",
+   "strength": "60",
+   "duration": "35Hrs",
+   "fee": "3,450 USD",
+   "aircraft": [
+    "Bell 47 D Bell 47 G Bell 47 G-1 Bell",
+    "47 G-2 Bell 47 G-3 B-1 Bell 47 G-4",
+    "Bell 47 G-4A Bell 47 G-5 Bell 47 H-1 Bell 47 J Bell 47 J-2 Bell 47 J-2 A",
+    "Bell 47 Bell Helicopters - SE",
+    "Turbine - Bell 47 T Bell 47 T Bell 47",
+    "T A Bell 204 (D) Bell 204/205/UH-1D X Bell 205 A-1 Bell UH-1D Bell",
+    "UH-1H Bell 206 A Bell 206 B Bell",
+    "206 B 2 Bell 206 B 3 (D) Bell 206",
+    "Bell 206 L Bell 206 L-1 Bell 206 L-3",
+    "Bell 206 L-4 X."
+   ]
+  }
+ ],
+ "pilot": [
+  {
+   "no": 70,
+   "code": "PPL 201",
+   "training": "Private Pilot License",
+   "strength": "60",
+   "duration": "1 Year",
+   "fee": "13,147 USD"
+  },
+  {
+   "no": 71,
+   "code": "CPL 202",
+   "training": "Commercial Pilot License",
+   "strength": "60",
+   "duration": "3Years",
+   "fee": "32,877 USD"
+  },
+  {
+   "no": 72,
+   "code": "CPLH 203",
+   "training": "Commercial Pilot License for PPL holders.",
+   "strength": "60",
+   "duration": "15Months",
+   "fee": "39,452 USD"
+  },
+  {
+   "no": 73,
+   "code": "ST 204",
+   "training": "Simulator Training",
+   "strength": "60",
+   "duration": "18 Months",
+   "fee": "40,987 USD"
+  },
+  {
+   "no": 74,
+   "code": "HT 205",
+   "training": "Helicopter Pilot Training",
+   "strength": "60",
+   "duration": "2 years",
+   "fee": "49,207 USD"
+  }
+ ],
+ "pilotTypes": [
+  {
+   "no": 75,
+   "code": "TP206",
+   "strength": "60",
+   "duration": "60Hrs",
+   "fee": "1,00,000 USD",
+   "aircraft": [
+    "A310 - 200 series",
+    "- 300 series",
+    "A300 - B4 600 series",
+    "- C4 600 series",
+    "- F4 600 series"
+   ]
+  },
+  {
+   "no": 76,
+   "code": "TP207",
+   "strength": "60",
+   "duration": "60Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "A300 - 600ST (Beluga)"
+   ]
+  },
+  {
+   "no": 77,
+   "code": "TP208",
+   "strength": "60",
+   "duration": "60Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "A318 - 100 series",
+    "A319 - 100 series",
+    "A320 - 100 series",
+    "- 200 series",
+    "- neo",
+    "A321 - 100 series",
+    "- 200 series",
+    "- neo"
+   ]
+  },
+  {
+   "no": 78,
+   "code": "TP209",
+   "strength": "60",
+   "duration": "60Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "A330 - 300 series",
+    "- 200 series",
+    "-200F",
+    "- 200 MRTT FAF STC",
+    "- 900 series",
+    "- 800 series"
+   ]
+  },
+  {
+   "no": 79,
+   "code": "TP210",
+   "strength": "60",
+   "duration": "60Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "A330 - 700L"
+   ]
+  },
+  {
+   "no": 80,
+   "code": "TP211",
+   "strength": "60",
+   "duration": "70Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "A350 - 900 series",
+    "-1000 series"
+   ]
+  },
+  {
+   "no": 81,
+   "code": "TP212",
+   "strength": "60",
+   "duration": "70Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "A340 - 200 series",
+    "- 300 series",
+    "- 500 series",
+    "- 600 series"
+   ]
+  },
+  {
+   "no": 82,
+   "code": "TP213",
+   "strength": "60",
+   "duration": "70Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "A380 - 800 series"
+   ]
+  },
+  {
+   "no": 83,
+   "code": "TP214",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "B727 -100 series",
+    "-200 series"
+   ]
+  },
+  {
+   "no": 84,
+   "code": "TP215",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "B737 -100 series",
+    "-200 series"
+   ]
+  },
+  {
+   "no": 85,
+   "code": "TP216",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "B737 CL",
+    "-300 / -400 / -500 series"
+   ]
+  },
+  {
+   "no": 86,
+   "code": "TP217",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "B737 NG",
+    "-600 / -700 / -800 / -900 / -",
+    "900 ER series",
+    "B737 MAX",
+    "-8 / -9 series"
+   ]
+  },
+  {
+   "no": 87,
+   "code": "TP218",
+   "strength": "60",
+   "duration": "100Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "B747 -100 series",
+    "B747 -200 series",
+    "B747 -300 series"
+   ]
+  },
+  {
+   "no": 88,
+   "code": "TP219",
+   "strength": "60",
+   "duration": "100Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "B747-SP"
+   ]
+  },
+  {
+   "no": 89,
+   "code": "TP220",
+   "strength": "60",
+   "duration": "100Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "B747 - 400 series",
+    "- 400 F series"
+   ]
+  },
+  {
+   "no": 90,
+   "code": "TP221",
+   "strength": "60",
+   "duration": "100Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "B747 - 8 series",
+    "- 8F series"
+   ]
+  },
+  {
+   "no": 91,
+   "code": "TP222",
+   "strength": "60",
+   "duration": "100Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "B757 - 200 series",
+    "- 300 series"
+   ]
+  },
+  {
+   "no": 92,
+   "code": "TP223",
+   "strength": "60",
+   "duration": "100Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "B767 - 200 series",
+    "- 300 series",
+    "- 300 F series"
+   ]
+  },
+  {
+   "no": 93,
+   "code": "TP224",
+   "strength": "60",
+   "duration": "100Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "B767 -400 ER"
+   ]
+  },
+  {
+   "no": 94,
+   "code": "TP225",
+   "strength": "60",
+   "duration": "100Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "B777 - 200 series",
+    "-300 series",
+    "B777F"
+   ]
+  },
+  {
+   "no": 95,
+   "code": "TP226",
+   "strength": "60",
+   "duration": "100Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "B787 - 8 series",
+    "- 9 series",
+    "-10 series"
+   ]
+  },
+  {
+   "no": 96,
+   "code": "TP227",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "ATR 42 (not PEC equipped)",
+    "- 42-200 / -300 / -320"
+   ]
+  },
+  {
+   "no": 97,
+   "code": "TP228",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "ATR 42 (PEC equipped)",
+    "- 42-400 / -500",
+    "ATR 72 (not PEC equipped)",
+    "- 72-101 / -102 / -201 / -202 / -211 / -212",
+    "ATR 72 (PEC equipped)",
+    "- 72-101 / -102 / -201 / -202",
+    "(with mod 4371)",
+    "- 72-211 / -212",
+    "(with mod 3973 or 4371)"
+   ]
+  },
+  {
+   "no": 98,
+   "code": "TP229",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "ATR 42 (glass cockpit or 42-600)",
+    "- 42-500",
+    "(with mod 5948)",
+    "ATR 72 (glass cockpit or 72-600)",
+    "- 72-212A",
+    "(with mod 5948)"
+   ]
+  },
+  {
+   "no": 99,
+   "code": "TP230",
+   "strength": "60",
+   "duration": "30Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Jetstream 41"
+   ]
+  },
+  {
+   "no": 100,
+   "code": "TP231",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Beechcraft Raytheon RA-390"
+   ]
+  },
+  {
+   "no": 101,
+   "code": "TP232",
+   "strength": "60",
+   "duration": "30Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Piaggio 166, P166"
+   ]
+  },
+  {
+   "no": 102,
+   "code": "TP233",
+   "strength": "60",
+   "duration": "30Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Piaggio Aero Industries",
+    "P180 Avanti"
+   ]
+  },
+  {
+   "no": 103,
+   "code": "TP234",
+   "strength": "60",
+   "duration": "25Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "P180 Avanti II",
+    "P180 Avanti EVO"
+   ]
+  },
+  {
+   "no": 104,
+   "code": "TP235",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Bombardier Inc. CL 215"
+   ]
+  },
+  {
+   "no": 105,
+   "code": "TP236",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Bombardier Inc.",
+    "Challenger series:",
+    "CL 600",
+    "CL 601-1A",
+    "CL 601-3A"
+   ]
+  },
+  {
+   "no": 106,
+   "code": "TP237",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Bombardier Inc.",
+    "CL-600-2B16",
+    "- Challenger 605",
+    "- Challenger 650"
+   ]
+  },
+  {
+   "no": 107,
+   "code": "TP238",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Bombardier Inc.",
+    "CL600-2C10",
+    "- 700",
+    "- 701",
+    "- 702",
+    "- Challenger 870",
+    "CL600-2D15",
+    "- 705",
+    "CL600-2D24",
+    "- 900",
+    "- Challenger 890"
+   ]
+  },
+  {
+   "no": 108,
+   "code": "TP239",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Bombardier Inc.",
+    "CL600-2E25",
+    "- 1000"
+   ]
+  },
+  {
+   "no": 109,
+   "code": "TP240",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Bombardier Inc. BD700-1A10",
+    "(Global Express XRS)",
+    "BD700-1A11 (Global 5000)"
+   ]
+  },
+  {
+   "no": 110,
+   "code": "TP241",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Bombardier Inc. BD-700"
+   ]
+  },
+  {
+   "no": 111,
+   "code": "TP242",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Bombardier Inc.",
+    "BD700-1A10 GVFD (Global 6000)",
+    "BD700-1A11 GVFD (Global 5000 GVFD)"
+   ]
+  },
+  {
+   "no": 112,
+   "code": "TP243",
+   "strength": "60",
+   "duration": "36Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Bombardier Inc.",
+    "BD-700-1A10 (Global 6500)",
+    "BD-700-1A11 (Global 5500)"
+   ]
+  },
+  {
+   "no": 113,
+   "code": "TP244",
+   "strength": "60",
+   "duration": "60Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "McDonnell Douglas",
+    "Douglas A-26B"
+   ]
+  },
+  {
+   "no": 114,
+   "code": "TP245",
+   "strength": "60",
+   "duration": "60Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "McDonnell Douglas",
+    "DC-3A-S1C3G",
+    "DC-3C-SC3G"
+   ]
+  },
+  {
+   "no": 115,
+   "code": "TP246",
+   "strength": "60",
+   "duration": "60Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "McDonnell Douglas DC4",
+    "DC6 series DC7C",
+    "DC8 -33",
+    "-50, 60, 70 series DC9 10-50 series"
+   ]
+  },
+  {
+   "no": 116,
+   "code": "TP247",
+   "strength": "60",
+   "duration": "60Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "McDonnell Douglas / Boeing",
+    "DC9 80 series",
+    "MD 88 series",
+    "MD 90 series",
+    "MD 11",
+    "DC 10 series"
+   ]
+  },
+  {
+   "no": 117,
+   "code": "TP248",
+   "strength": "60",
+   "duration": "34Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Learjet (Bombardier)",
+    "Learjet -20 series",
+    "45 (Learjet 40 series, LR-40)",
+    "45 (Learjet 45 series, LR-45)",
+    "Learjet -55 series",
+    "Model 60 (Learjet 60 series)"
+   ]
+  },
+  {
+   "no": 118,
+   "code": "TP249",
+   "strength": "60",
+   "duration": "34Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Learjet (Bombardier)",
+    "-30 series",
+    "75 (Learjet 70 series, LR-70)",
+    "75 (Learjet 75 series, LR-75)"
+   ]
+  },
+  {
+   "no": 119,
+   "code": "TP250",
+   "strength": "60",
+   "duration": "25Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Cessna",
+    "525 – CJ1",
+    "525A – CJ2",
+    "525 – CJ1+",
+    "525A – CJ2+",
+    "525B – CJ3",
+    "525 – M2",
+    "525C – CJ4"
+   ]
+  },
+  {
+   "no": 120,
+   "code": "TP251",
+   "strength": "60",
+   "duration": "35Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Cessna",
+    "C560XL",
+    "C560XLS C560XL/XLS",
+    "C500/550/560",
+    "C 500",
+    "C560XLS+",
+    "C 550",
+    "CS 550CS 550 Bravo 560",
+    "(Citation V 560 (Citation Ultra)"
+   ]
+  },
+  {
+   "no": 121,
+   "code": "TP252",
+   "strength": "60",
+   "duration": "35Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Cessna",
+    "560 Encore",
+    "OSD FC CE-560 Encore / Encore+",
+    "560 Encore+",
+    "C650 Citation III",
+    "Citation VI",
+    "Citation VII"
+   ]
+  },
+  {
+   "no": 122,
+   "code": "TP253",
+   "strength": "60",
+   "duration": "35Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Cessna",
+    "C680 Sovereign",
+    "C680 Sovereign+",
+    "C680A Latitude"
+   ]
+  },
+  {
+   "no": 123,
+   "code": "TP254",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Dassault",
+    "Falcon 10",
+    "Falcon 10/100",
+    "Falcon 20/200",
+    "Falcon 20 series",
+    "Falcon 100",
+    "Falcon 2000",
+    "Falcon2000/2000EX",
+    "Falcon 2000 EX EASy",
+    "Falcon 2000 DX",
+    "Falcon 2000 LX Falcon 2000 EX"
+   ]
+  },
+  {
+   "no": 124,
+   "code": "TP255",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Dassault",
+    "Falcon 900EX EASyII",
+    "Falcon 900DX EASyII",
+    "Falcon 900LX EASyII",
+    "Falcon900EX EASy Falcon",
+    "900 EX EASy",
+    "Falcon 900 DX",
+    "Falcon 900 LX"
+   ]
+  },
+  {
+   "no": 125,
+   "code": "TP256",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Falcon 2000EX EASy II",
+    "Falcon 2000DX EASy II",
+    "Falcon 2000LX EASy II",
+    "Falcon 2000LXS",
+    "Falcon 2000S"
+   ]
+  },
+  {
+   "no": 126,
+   "code": "TP257",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Dassault",
+    "Falcon 7X",
+    "Falcon 7X",
+    "Falcon 7X EASy II",
+    "Falcon 8X",
+    "Mystere Falcon 50",
+    "Falcon 50EX",
+    "Mystere Falcon 900",
+    "Falcon 900C",
+    "Falcon 900EX",
+    "Falcon50/900"
+   ]
+  },
+  {
+   "no": 127,
+   "code": "TP258",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Embraer",
+    "Bandeirante EMB 110",
+    "EMB 120",
+    "EMB 120 Brasilia",
+    "EMB 135/145",
+    "EMB - 145",
+    "-135, 145 series",
+    "EMB - 145",
+    "-135,145 series",
+    "equipt with Autothrottle"
+   ]
+  },
+  {
+   "no": 128,
+   "code": "TP259",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Embraer",
+    "EMB-500 (Phenom 100)",
+    "EMB 500/505",
+    "EMB-505 (Phenom 300)",
+    "EMB 550",
+    "EMB-550 (Legacy 500)",
+    "EMB-550 (Praetor 600)",
+    "EMB-545 (Legacy 450)",
+    "EMB-545 (Praetor 500)"
+   ]
+  },
+  {
+   "no": 129,
+   "code": "TP260",
+   "strength": "60",
+   "duration": "50Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Embraer",
+    "ERJ 170-100 / Embraer 170",
+    "ERJ 170-200 / Embraer 175",
+    "ERJ 190-100 / Embraer 190",
+    "ERJ 190-100 ECJ / Lineage 1000",
+    "ERJ 190-200 / Embraer 195",
+    "ERJ 190-300 / Embraer",
+    "190 E2",
+    "ERJ 190-400 /Embraer",
+    "195 E2"
+   ]
+  },
+  {
+   "no": 130,
+   "code": "TP261",
+   "strength": "60",
+   "duration": "35Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Agusta Bell - SE Piston -",
+    "Agusta Bell 47G-2 Agusta Bell",
+    "47G-2A-1 Agusta Bell 47G-3B-1 Agusta Bell 47G-4 Agusta",
+    "Bell 47G-4A Agusta Bell 47J",
+    "Agusta Bell 47J-2 Agusta Bell",
+    "47J-3 Bell",
+    "Agusta Bell - SE Turbine",
+    "Agusta Bell 206 A Agusta Bell",
+    "206 B (D) Bell 206"
+   ]
+  },
+  {
+   "no": 131,
+   "code": "TP262",
+   "strength": "60",
+   "duration": "35Hrs",
+   "fee": "1,01,000 USD",
+   "aircraft": [
+    "Bell 47 D Bell 47 G Bell 47 G-1",
+    "Bell 47 G-2 Bell 47 G-3 B-1",
+    "Bell 47 G-4 Bell 47 G-4A Bell",
+    "47 G-5 Bell 47 H-1 Bell 47 J",
+    "Bell 47 J-2 Bell 47 J-2 A Bell 47",
+    "Bell Helicopters - SE Turbine -",
+    "Bell 47 T Bell 47 T Bell 47 T A",
+    "Bell 204 (D) Bell 204/205/UH-1D X Bell 205 A-1 Bell UH-1D",
+    "Bell UH-1H Bell 206 A Bell 206",
+    "B Bell 206 B 2 Bell 206 B 3 (D)",
+    "Bell 206 Bell 206 L Bell 206 L-1",
+    "Bell 206 L-3 Bell 206 L-4 X."
+   ]
+  }
+ ],
+ "other": [
+  {
+   "no": 132,
+   "code": "CAB801",
+   "training": "CABIN CREW TRAINING",
+   "strength": "60",
+   "duration": "1 year",
+   "fee": "1,643 USD"
+  },
+  {
+   "no": 133,
+   "code": "DAM 601",
+   "training": "Diploma In Aviation Medicine",
+   "strength": "60",
+   "duration": "2 Years",
+   "fee": "1,577 USD"
+  },
+  {
+   "no": 134,
+   "code": "BAM 602",
+   "training": "Degree In Aviation Medicine",
+   "strength": "60",
+   "duration": "3 years",
+   "fee": "2103 USD"
+  },
+  {
+   "no": 135,
+   "code": "BATC 603",
+   "training": "Degree In Air Traffic Control",
+   "strength": "60",
+   "duration": "3 Years",
+   "fee": "1,315 USD"
+  },
+  {
+   "no": 136,
+   "code": "BAHC 604",
+   "training": "Degree In Aviation Healthcare",
+   "strength": "60",
+   "duration": "3 years",
+   "fee": "1,315 USD"
+  },
+  {
+   "no": 137,
+   "code": "BAD 605",
+   "training": "Degree In Aviation Disaster",
+   "strength": "60",
+   "duration": "3 years",
+   "fee": "1,315 USD"
+  },
+  {
+   "no": 138,
+   "code": "BAH 606",
+   "training": "Degree in Aviation Hospitality",
+   "strength": "60",
+   "duration": "3 years",
+   "fee": "3,944 USD"
+  },
+  {
+   "no": 139,
+   "code": "BAS 608",
+   "training": "B.Tech In Aeronautical Engineering",
+   "strength": "60",
+   "duration": "4 years",
+   "fee": "9,200 USD"
+  },
+  {
+   "no": 140,
+   "code": "BAN 609",
+   "training": "B.Tech In Space Science",
+   "strength": "60",
+   "duration": "4 years",
+   "fee": "7,887 USD"
+  },
+  {
+   "no": 141,
+   "code": "MBA 610",
+   "training": "Master Of Business Administration In Aviation",
+   "strength": "60",
+   "duration": "2 years",
+   "fee": "6,572 USD"
+  },
+  {
+   "no": 142,
+   "code": "GH901",
+   "training": "Ground Handling Training",
+   "strength": "60",
+   "duration": "1 year",
+   "fee": "4,127 USD"
+  }
+ ],
+ "checks": [
+  [
+   "01",
+   "M101",
+   "B737-800",
+   "20 MONTH",
+   "25",
+   "",
+   "$160K",
+   "$320K",
+   "$1.5M"
+  ],
+  [
+   "02",
+   "M102",
+   "B747-400",
+   "18 MONTH",
+   "25",
+   "",
+   "$800K",
+   "$1.2M",
+   "$4.5M"
+  ],
+  [
+   "03",
+   "M103",
+   "B757-200",
+   "18 MONTH",
+   "25",
+   "",
+   "$450K",
+   "$600K",
+   "$1.7M"
+  ],
+  [
+   "04",
+   "M104",
+   "B767-300",
+   "18 MONTH",
+   "25",
+   "",
+   "$550K",
+   "$700K",
+   "$2.4M"
+  ],
+  [
+   "05",
+   "M105",
+   "B777-300",
+   "20 MONTH",
+   "25",
+   "",
+   "$475K",
+   "$650K",
+   "$2.8M"
+  ],
+  [
+   "06",
+   "M106",
+   "A320-200",
+   "18 MONTH",
+   "25",
+   "",
+   "$180K",
+   "$350K",
+   "$1.8M"
+  ],
+  [
+   "07",
+   "M107",
+   "A330-300",
+   "18 MONTH",
+   "25",
+   "",
+   "$475K",
+   "$650K",
+   "$3.3M"
+  ],
+  [
+   "08",
+   "M108",
+   "ATR72-600",
+   "16 MONTH",
+   "25",
+   "",
+   "$120K",
+   "$220K",
+   "$1M"
+  ],
+  [
+   "09",
+   "M109",
+   "CESSNA",
+   "12MONTH",
+   "25",
+   "",
+   "$900",
+   "$1000",
+   "$1500"
+  ],
+  [
+   "10",
+   "M110",
+   "BOMBARDIER",
+   "12MONTH",
+   "25",
+   "",
+   "$120K",
+   "$150K",
+   "$230K"
+  ],
+  [
+   "11",
+   "M111",
+   "EMBRAER",
+   "12MONTH",
+   "25",
+   "",
+   "$320",
+   "$425",
+   "$12K"
+  ],
+  [
+   "12",
+   "M112",
+   "AVRO",
+   "12MONTH",
+   "25",
+   "",
+   "$40K",
+   "$60K",
+   "$104K"
+  ],
+  [
+   "13",
+   "M113",
+   "DORNIER",
+   "18MONTH",
+   "25",
+   "",
+   "$600",
+   "$900",
+   "$50K"
+  ],
+  [
+   "14",
+   "M114",
+   "DASSAULT",
+   "12MONTH",
+   "25",
+   "",
+   "$110K",
+   "$130K",
+   "$180K"
+  ],
+  [
+   "15",
+   "M115",
+   "PIAGGIO AVANTI",
+   "12MONTH",
+   "25",
+   "",
+   "$290",
+   "$320",
+   "$12K"
+  ],
+  [
+   "16",
+   "M116",
+   "HELICOPTER",
+   "8MONTH",
+   "25",
+   "",
+   "$102K",
+   "$110K",
+   "$160K"
+  ]
+ ]
+}

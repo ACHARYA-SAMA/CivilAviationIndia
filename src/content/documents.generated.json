@@ -1,0 +1,110 @@
+{
+ "fee-schedule": {
+  "href": "/documents/programmes/aviation-training-programs-fee-schedule.pdf",
+  "title": "Aviation training programmes: codes, intake, duration and fees",
+  "bytes": 1732563,
+  "pages": 23
+ },
+ "programme-list": {
+  "href": "/documents/programmes/aviation-training-programs-list.pdf",
+  "title": "Aviation training programmes list",
+  "bytes": 160230,
+  "pages": 2
+ },
+ "btech-structure": {
+  "href": "/documents/programmes/btech-aerospace-programme-structure.pdf",
+  "title": "B.Tech Aerospace Engineering: programme structure",
+  "bytes": 258975,
+  "pages": 2
+ },
+ "btech-courses": {
+  "href": "/documents/programmes/btech-courses-and-subjects.pdf",
+  "title": "B.Tech Aeronautical Engineering: courses and subjects",
+  "bytes": 3980121,
+  "pages": 104
+ },
+ "ame-syllabus": {
+  "href": "/documents/programmes/ame-syllabus.pdf",
+  "title": "AME training manual and syllabus",
+  "bytes": 534146,
+  "pages": 112
+ },
+ "ame-mechanical": {
+  "href": "/documents/programmes/ame-mechanical-detailed-syllabus.pdf",
+  "title": "AME mechanical stream: detailed syllabus",
+  "bytes": 154340,
+  "pages": 18
+ },
+ "ame-avionics": {
+  "href": "/documents/programmes/ame-avionics-detailed-syllabus.pdf",
+  "title": "AME avionics stream: detailed syllabus",
+  "bytes": 208953,
+  "pages": 35
+ },
+ "mro": {
+  "href": "/documents/programmes/aircraft-maintenance-organisation.pdf",
+  "title": "Aircraft maintenance organisation (MRO)",
+  "bytes": 823474,
+  "pages": 3
+ },
+ "check-costs": {
+  "href": "/documents/programmes/maintenance-check-costs.pdf",
+  "title": "Cost of the maintenance checks",
+  "bytes": 292104,
+  "pages": 2
+ },
+ "pilot-training": {
+  "href": "/documents/programmes/pilot-training.pdf",
+  "title": "Flying Training School: pilot training",
+  "bytes": 929557,
+  "pages": 4
+ },
+ "bba-syllabus": {
+  "href": "/documents/programmes/bba-aviation-management-syllabus-2019-20.pdf",
+  "title": "BBA Aviation Management: regulations and syllabus 2019–20",
+  "bytes": 1619962,
+  "pages": 56
+ },
+ "mba-syllabus": {
+  "href": "/documents/programmes/mba-aviation-management-syllabus-2019-20.pdf",
+  "title": "MBA Aviation Management: regulations, curriculum and syllabus 2019–20",
+  "bytes": 1042795,
+  "pages": 42
+ },
+ "disaster-paper": {
+  "href": "/documents/programmes/aviation-disaster-management.pdf",
+  "title": "Aviation disaster management: assessment",
+  "bytes": 6709,
+  "pages": 2
+ },
+ "diploma-syllabus": {
+  "href": "/documents/programmes/diploma-aeronautical-engineering-syllabus.pdf",
+  "title": "Diploma in Aeronautical Engineering: syllabus, years I–III",
+  "bytes": 704092,
+  "pages": 50
+ },
+ "research-centre": {
+  "href": "/documents/programmes/research-and-development-centre.pdf",
+  "title": "Research and Development Centre: guidelines for Organized Research Units",
+  "bytes": 830399,
+  "pages": 11
+ },
+ "advisory-committee": {
+  "href": "/documents/programmes/advisory-committee-members.pdf",
+  "title": "Advisory committee members of the Aero Space Society of India",
+  "bytes": 626495,
+  "pages": 4
+ },
+ "registration-form": {
+  "href": "/documents/programmes/registration-form.pdf",
+  "title": "Registration form",
+  "bytes": 489983,
+  "pages": 1
+ },
+ "admission-form": {
+  "href": "/documents/programmes/certificate-course-admission-form.pdf",
+  "title": "Certificate course admission form",
+  "bytes": 489330,
+  "pages": 1
+ }
+}
