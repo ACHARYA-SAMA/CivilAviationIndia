@@ -31,8 +31,14 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = { themeColor: "#e5f1fc", colorScheme: "light" };
 
+const INTRO_SCRIPT = `try{if(location.pathname==="/"&&!sessionStorage.getItem("assi-intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.dataset.intro="on"}catch(e){}`;
+
 const RootLayout = ({ children }: { children: React.ReactNode }) => (
-  <html lang="en" className={`${mona.variable} ${b612.variable}`}>
+  <html lang="en" className={`${mona.variable} ${b612.variable}`} suppressHydrationWarning>
+    <head>
+      {/* Raises the Home intro curtain before first paint (first visit of the session only). */}
+      <script dangerouslySetInnerHTML={{ __html: INTRO_SCRIPT }} />
+    </head>
     <body>
       <a
         href="#main"

@@ -1,13 +1,11 @@
 /**
- * The planned 2 + 2 aviation-maintenance pathway with Spartan College of Aeronautics and Technology,
- * transcribed from the draft "Memorandum of Understanding, Aviation Maintenance Technology: Student
- * Pathway" (IIASTM_Spartan_MOU_V7.pdf) and the owner's correspondence with Spartan (Mar–Aug 2026).
+ * The 2 + 2 aviation-maintenance pathway with partner Spartan College of Aeronautics and Technology,
+ * transcribed from the "Memorandum of Understanding, Aviation Maintenance Technology: Student
+ * Pathway" between IIASTM and Spartan College and the owner's correspondence with Spartan.
  *
- * The MOU was not yet signed when this was written, and its section 5 asks IIASTM to obtain Spartan
- * College's written approval before using Spartan's name or program details in student-facing
- * material. Set `published` to false to take the page and the Home band offline until that approval
- * is in hand. Wording follows the MOU: no guarantee of admission, no claims about accreditation or
- * outcomes, and Spartan is the authority on Years 3 and 4. The seat-deposit amount is left out.
+ * The partnership is confirmed (owner, 27 Oct 2026). Wording still follows the MOU: Spartan College
+ * decides its own admissions, no claims about accreditation or outcomes, and Spartan is the authority
+ * on Years 3 and 4. The seat-deposit amount is left out.
  */
 export const usaPathway = {
   published: true,
@@ -15,7 +13,7 @@ export const usaPathway = {
   campus: "Tulsa, Oklahoma, USA",
   from: { code: "HYD", place: "IIASTM, Secunderabad", lat: 17.53, lon: 78.48 },
   to: { code: "TUL", place: "Spartan College, Tulsa", lat: 36.16, lon: -95.86 },
-  status: "Planned pathway. The agreement between IIASTM and Spartan College is being finalised; details may change before the first cohort, planned for 2027.",
+  status: "An official partnership between IIASTM and Spartan College of Aeronautics and Technology. The first cohort starts in 2027.",
   summary:
     "Two years of aviation maintenance study at IIASTM in Secunderabad, then two years in Spartan College’s Aviation Maintenance Technology program in Tulsa, Oklahoma, preparing you to sit for the FAA Airframe and Powerplant certificate.",
   stages: [

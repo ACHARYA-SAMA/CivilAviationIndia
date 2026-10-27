@@ -1,17 +1,22 @@
 import type { Metadata } from "next";
 import { AdmitCta } from "@/components/home/AdmitCta";
+import { AircraftStudio } from "@/components/home/AircraftStudio";
 import { FieldRecord } from "@/components/home/FieldRecord";
 import { Hero } from "@/components/home/Hero";
-import { LandingFinale } from "@/components/home/LandingFinale";
+import { ArrivalFinale } from "@/components/home/ArrivalFinale";
 import { LetterFan, type FanLetter } from "@/components/home/LetterFan";
 import { Mission } from "@/components/home/Mission";
 import { PassDeck, type DeckItem } from "@/components/home/PassDeck";
+import { Preloader } from "@/components/home/Preloader";
 import { ResearchList } from "@/components/home/ResearchList";
 import { TrackStory, type Track } from "@/components/home/TrackStory";
 import { WindowReveal } from "@/components/home/WindowReveal";
 import { Photo } from "@/components/media/Photo";
+import { Partners } from "@/components/home/Partners";
+import { VelocityMarquee } from "@/components/home/VelocityMarquee";
 import { PathwayBand } from "@/components/pathway/PathwayBand";
 import type { ViewerItem } from "@/components/viewer/LetterViewer";
+import { aircraftSystems } from "@/content/anatomy";
 import { letterTitle, letters } from "@/content/letters";
 import { programs, requireProgram } from "@/content/programs";
 import { articlesByDate } from "@/content/research";
@@ -69,6 +74,12 @@ const buildViewerItems = (): ViewerItem[] =>
     return [{ id: letter.id, src: media.src, width: media.width, height: media.height, blur: media.blur, download: media.download, title: letterTitle(letter), summary: letter.summary }];
   });
 
+/** The careers the programmes lead to, for the type marquee. */
+const MARQUEE = [
+  ["Pilots", "Aircraft engineers", "Air traffic controllers"],
+  ["Cabin crew", "Aerospace engineers", "Aviation managers"],
+] as const;
+
 /** The hand of letters on Home: the President in the middle, the Chief Minister and the PMO beside him. */
 const FAN = ["letter-09", "letter-15", "letter-13", "letter-02", "letter-07", "letter-24", "letter-11"];
 
@@ -84,6 +95,7 @@ const HomePage = () => {
 
   return (
     <>
+      <Preloader />
       <Hero />
 
       <WindowReveal
@@ -97,6 +109,14 @@ const HomePage = () => {
 
       <Mission />
 
+      <AircraftStudio
+        systems={aircraftSystems}
+        heading="Know every system."
+        intro="The society’s aircraft, in the institute’s livery. Turn it, fly in close to its six main systems, and see which programme trains the people who fly, maintain and design them."
+      />
+
+      <VelocityMarquee rows={MARQUEE} />
+
       <section id="training" data-fl="Training" className="relative">
         <TrackStory tracks={buildTracks()} />
       </section>
@@ -104,6 +124,8 @@ const HomePage = () => {
       <PassDeck items={buildDeck()} heading="Choose your departure" intro={home.trainingIntro} />
 
       <PathwayBand />
+
+      <Partners />
 
       <section id="letters" data-fl="Letters" className="relative isolate overflow-hidden py-24 md:py-36">
         <div className="container-deck">
@@ -136,10 +158,10 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Climb to cruise, then the night-fall landing at Hyderabad closes the page. */}
+      {/* Climb to cruise, then the blue-hour arrival at Hyderabad closes the page. */}
       <AdmitCta />
 
-      <LandingFinale />
+      <ArrivalFinale />
     </>
   );
 };

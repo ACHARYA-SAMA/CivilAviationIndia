@@ -140,9 +140,55 @@ export type Partner = { id: string; name: string; relation: string; place: strin
 export const home_base = { name: "IIASTM, Kompally", lat: 17.53, lon: 78.48 } as const;
 
 export const partners: readonly Partner[] = [
+  { id: "spartan", name: "Spartan College of Aeronautics and Technology", relation: "Partner college, 2 + 2 Aviation Maintenance Technology pathway", place: "Tulsa, Oklahoma, USA", lat: 36.16, lon: -95.86 },
+  { id: "hiller", name: "Hiller Aviation Museum", relation: "Partner museum: aviation heritage and education", place: "San Carlos, California, USA", lat: 37.51, lon: -122.25 },
   { id: "map", name: "Maluti-A-Phofung Local Municipality", relation: "Memorandum of Understanding, Skill Africa initiative", place: "Free State, South Africa", lat: -28.27, lon: 29.12 },
   { id: "dgca", name: "DGCA", relation: "Training aligned with India’s civil aviation regulator", place: "New Delhi", lat: 28.61, lon: 77.21 },
   { id: "icao", name: "ICAO", relation: "International standards for training and safety investigation", place: "Montréal", lat: 45.5, lon: -73.57 },
   { id: "faa", name: "FAA", relation: "Maintenance and pilot standards", place: "Washington, D.C.", lat: 38.9, lon: -77.04 },
   { id: "easa", name: "EASA", relation: "European maintenance standards (AME curriculum)", place: "Cologne", lat: 50.94, lon: 6.96 },
 ];
+
+/**
+ * Partner institutions shown on Home, with where they are (for distance and local time from Kompally).
+ * Spartan College and the Hiller Aviation Museum: partnerships confirmed by the owner, 27 Oct 2026.
+ */
+export type Alliance = { id: string; name: string; role: string; detail: string; place: string; timeZone: string; lat: number; lon: number; href?: string };
+
+export const alliances: readonly Alliance[] = [
+  {
+    id: "spartan",
+    name: "Spartan College of Aeronautics and Technology",
+    role: "Partner college",
+    detail: "The 2 + 2 Aviation Maintenance Technology pathway: two years at IIASTM, then two years in Tulsa preparing for the FAA Airframe and Powerplant certificate.",
+    place: "Tulsa, Oklahoma, USA",
+    timeZone: "America/Chicago",
+    lat: 36.16,
+    lon: -95.86,
+    href: "/programs/usa-pathway",
+  },
+  {
+    id: "hiller",
+    name: "Hiller Aviation Museum",
+    role: "Partner museum",
+    detail: "Aviation heritage and education in the San Francisco Bay Area.",
+    place: "San Carlos, California, USA",
+    timeZone: "America/Los_Angeles",
+    lat: 37.51,
+    lon: -122.25,
+  },
+  {
+    id: "map",
+    name: "Maluti-A-Phofung Local Municipality",
+    role: "Memorandum of Understanding",
+    detail: "The Skill Africa initiative, taking the institute’s training blueprint to South Africa.",
+    place: "Free State, South Africa",
+    timeZone: "Africa/Johannesburg",
+    lat: -28.27,
+    lon: 29.12,
+  },
+];
+
+/** Regulators and standards bodies the curriculum is aligned with (About text). */
+export const standards = ["DGCA", "ICAO", "FAA", "EASA"] as const;
+

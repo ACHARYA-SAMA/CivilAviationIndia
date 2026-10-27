@@ -50,7 +50,7 @@ const PathwayPage = () => {
             <p className="mt-7 max-w-xl text-[1.1875rem] leading-[1.6] text-ink/90">{usaPathway.summary}</p>
             <p className="mt-6 flex max-w-xl gap-3 rounded-[14px] bg-white/80 p-4 text-[0.9375rem] leading-relaxed text-ink shadow-[0_14px_34px_-24px_rgb(4_30_80/0.6)] ring-1 ring-white backdrop-blur">
               <svg aria-hidden viewBox="0 0 20 20" className="mt-0.5 size-5 shrink-0 text-sky-500">
-                <path d="M10 2 1.5 17h17zM10 8v4M10 14.5v.5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M10 1.8 3.5 4.4v5.2c0 4 2.8 7.4 6.5 8.6 3.7-1.2 6.5-4.6 6.5-8.6V4.4zM7 10l2.1 2.1L13.3 8" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               {usaPathway.status}
             </p>

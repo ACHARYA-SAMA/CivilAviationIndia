@@ -92,7 +92,7 @@ export const TrackStory = ({ tracks }: { tracks: readonly Track[] }) => {
 
           {/* Image / panel */}
           <div className="relative min-h-0 lg:col-span-7">
-            <div className="night absolute inset-0 overflow-hidden rounded-[22px] bg-deck-800 shadow-[0_40px_80px_-40px_rgb(4_30_80/0.6)]">
+            <div className="night grain absolute inset-0 overflow-hidden rounded-[22px] bg-deck-800 shadow-[0_40px_80px_-40px_rgb(4_30_80/0.6)]">
               {tracks.map((track, index) => (
                 <motion.div
                   key={track.id}

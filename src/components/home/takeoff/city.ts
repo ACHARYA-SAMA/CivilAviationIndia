@@ -44,7 +44,7 @@ const POINT_FRAGMENT = /* glsl */ `
   void main() {
     #include <logdepthbuf_fragment>
     float d = length(gl_PointCoord - 0.5) * 2.0;
-    float core = smoothstep(1.0, 0.0, d);
+    float core = 1.0 - smoothstep(0.0, 1.0, d);
     float a = (pow(core, 3.0) * 1.4 + pow(core, 1.2) * 0.25) * vAlpha;
     gl_FragColor = vec4(vColor * a, 1.0);
   }
@@ -304,9 +304,10 @@ export const buildCity = ({ small, rnd }: { small: boolean; rnd: Rand }) => {
     group,
     update: (t: number, viewportHeight: number, fov: number, pixelRatio: number) => {
       time.value = t;
-      scale.value = viewportHeight * pixelRatio / (2 * Math.tan((fov * Math.PI) / 360));
-      floorPx.value = 1.5 * pixelRatio;
-      maxPx.value = 22 * pixelRatio;
+      // Glows are sized for a bloom pass that spreads them further.
+      scale.value = (0.58 * viewportHeight * pixelRatio) / (2 * Math.tan((fov * Math.PI) / 360));
+      floorPx.value = 1.3 * pixelRatio;
+      maxPx.value = 14 * pixelRatio;
     },
     dispose: () => disposables.forEach((d) => d.dispose()),
   };

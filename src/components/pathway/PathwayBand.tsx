@@ -5,7 +5,7 @@ const PLANE = "M12 1.5c.9 0 1.5 1 1.5 2.2v5.4l8 4.6v2.1l-8-2.3v4.6l2.4 1.7v1.8L1
 
 /**
  * The 2 + 2 pathway as a route ticket: HYD to TUL, two years at each end, an aircraft flying the
- * line. Links to the full pathway page. Hidden while the pathway is unpublished.
+ * line. Links to the full pathway page. Hidden when `published` is false.
  */
 export const PathwayBand = ({ id = "pathway" }: { id?: string }) => {
   if (!usaPathway.published) return null;
@@ -16,7 +16,7 @@ export const PathwayBand = ({ id = "pathway" }: { id?: string }) => {
         <div className="lg:col-span-5">
           <p className="inline-flex items-center gap-2 rounded-full bg-white px-3.5 py-1.5 text-[0.8125rem] font-semibold text-sky-300 shadow-[0_8px_20px_-14px_rgb(11_50_100/0.5)] ring-1 ring-line">
             <span aria-hidden className="size-1.5 rounded-full bg-sky-400" />
-            New pathway, planned for 2027
+            Partner pathway, first cohort 2027
           </p>
           <h2 className="heading fs-section mt-6 text-ink">Two years in India. Two years in the USA.</h2>
           <p className="mt-6 max-w-lg text-[1.0625rem] leading-relaxed text-mute">{usaPathway.summary}</p>

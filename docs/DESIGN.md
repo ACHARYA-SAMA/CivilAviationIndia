@@ -1,3 +1,40 @@
+# Design notes, v7: photoreal, 27 Oct, fifth round
+
+The owner liked the take-off but found the aircraft cartoonish, and asked for an awwwards-level site
+with more components. v6 CAVOK (palette, type, fields, controls) stays; what changed:
+
+- **Aircraft** (`components/home/takeoff/aircraft.ts`, `geometry.ts`, `airframe.ts`, `livery.ts`).
+  A320neo-class dimensions. Fuselage lofted from side and plan profiles (monotone splines for the nose,
+  an up-swept tail cone, a wing-to-body fairing); wings, stabilisers, fin and sharklets lofted from real
+  airfoil sections with dihedral, twist and a trailing-edge kink; engines with a polished intake lip,
+  18 fan blades, spinner, core cowl and plug; flap-track fairings; retracting gear; antennas, probes.
+  Livery painted on canvases at the surface's true geometry (cockpit glazing placed by height on the
+  curved nose): colour, roughness, panel-line bump and a cabin-window glow; mixed-case titles.
+- **Rendering** (`takeoff/scene.ts`): HDR sunset sky shader that also lights and reflects in the paint
+  (PMREM), aerial-perspective haze that matches the horizon and warms towards the sun, MSAA HDR target,
+  bloom, ACES, and a lens pass (sun or landing-light flare with ghosts and an anamorphic streak,
+  chromatic aberration, vignette, grain). Palettes: `sunset` (take-off) and `bluehour` (arrival).
+  Watch for NaN on Direct3D: clamp every `pow()` base and never use reversed `smoothstep` edges.
+- **Stills**: `/dev/render` (development only) renders any frame of the scene from query parameters
+  (`palette`, plane `px py pz pitch yaw roll gear`, camera `cx cy cz`, look `lx ly lz`, `focal`, `flare`).
+  It produced `public/media/hero/arrival*.webp`; the take-off poster is the live scene's first frame.
+- **New on Home**: intro curtain (`Preloader.tsx`, once per session, driven by the scene's real build
+  progress); the anatomy studio (`AircraftStudio.tsx` + `studio/scene.ts`: drag to turn, six system
+  hotspots that fly the camera in and name the programme that trains for each); a scroll-velocity type
+  marquee; the partners band (Spartan College and the Hiller Aviation Museum, confirmed partners, plus
+  Maluti-A-Phofung, with distance and live local time); the blue-hour arrival finale (replaces the 2D
+  approach canvas). Every client-side navigation opens on a navy curtain naming the destination.
+- **Performance** (measured on an Intel UHD integrated GPU, Chrome, production build): 59–60 fps while
+  scrolling the take-off, the studio and the rest of Home, at 1× and 2× screens; phones 52–60 fps.
+  What it took: shaders compiled in parallel against the render target they draw into (three.js builds
+  a different variant for a target than for the screen); shader error checks off in production (each is
+  a synchronous GPU round trip); textures uploaded one at a time with yields; an off-screen, unculled
+  warm-up draw (Direct3D builds pipeline variants on first draw); canvases sized before the GPU is busy
+  and never re-written unless the size changes; livery canvases painted once and shared by both scenes;
+  noise drawn as tiled patterns; a fixed pixel budget (about 1 MP for the take-off, 1.2 MP for the studio)
+  instead of stepping resolution at run time; HDR + 2× MSAA only on the scene buffer; half-rate render
+  when idle; camera smoothed relative to the aircraft; readouts written to the DOM, not React state.
+
 # Design notes, v6: CAVOK (clear air), 7 Oct, fourth round
 
 The owner rejected v5's pastel sky and procedural clouds as childish ("2012"). v6 keeps the client's
